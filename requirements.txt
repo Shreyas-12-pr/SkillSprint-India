@@ -1,0 +1,3 @@
+# SkillSprint India - YouTube Marketing Engine
+# Install with: pip install -r requirements.txt
+Flask>=3.0,<4.0

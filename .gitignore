@@ -1,0 +1,46 @@
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtualenv
+.env
+.venv
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.refact/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# npm
+node_modules/
+package-lock.json
+
+# Logs
+*.log
+npm-debug.log*

@@ -1,0 +1,13 @@
+{
+  "name": "skillsprint-youtube-marketing-engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SkillSprint India YouTube Marketing Engine - Flask REST API + 5-tab dashboard. npm scripts wrap the Python commands.",
+  "scripts": {
+    "setup": "python -m pip install -r requirements.txt",
+    "postinstall": "python -m pip install -r requirements.txt",
+    "dev": "python app.py",
+    "start": "python app.py",
+    "test": "python -m py_compile app.py"
+  }
+}

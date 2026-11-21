@@ -1,0 +1,463 @@
+{
+  "dataset_note": "All volumes, CTR targets, and growth assumptions are directional planning estimates for a hypothetical Indian student audience. They are not live-verified YouTube numbers. Validate with YouTube Studio / Research before presenting any figure as measured data.",
+  "channel_profile": {
+    "name": "SkillSprint India",
+    "niche": "Beginner-friendly practical digital, coding, and career skills for Indian college students.",
+    "target_audience": {
+      "persona_name": "Riya, the first-gen college achiever",
+      "description": "An Indian college student (18-24) in a tier-2/tier-3 city who wants practical, job-relevant skills but cannot afford an expensive course and is lost among scattered tutorials.",
+      "age_range": "18-24 primary audience",
+      "geography": "India (with a focus on tier-2 and tier-3 cities)",
+      "academic_career_goals": [
+        "Learn one useful digital or coding skill at a time",
+        "Build class and portfolio projects they can show",
+        "Prepare a truthful resume and internship application"
+      ],
+      "pain_points": [
+        "Too many disconnected tutorials with no clear order",
+        "Little real-world experience to show recruiters",
+        "Needs short, practical lessons that fit a busy student schedule"
+      ],
+      "content_preferences": "Hinglish-friendly, screen-recorded, outcome-first tutorials with a downloadable checklist and a clear next step."
+    },
+    "value_proposition": "Every lesson ends with a student-sized output: one skill, one project, one template, or one clear next action.",
+    "brand_color_palette": {
+      "navy": "#0B1F3A",
+      "electric_blue": "#2F66F6",
+      "campus_yellow": "#FFB800",
+      "skill_mint": "#20A68A",
+      "off_white": "#F5F7FA",
+      "white": "#FFFFFF"
+    }
+  },
+  "keywords": [
+    {
+      "id": "kw-01",
+      "keyword": "how to make a resume for freshers",
+      "search_intent": "Create a first resume for an internship or entry-level role",
+      "monthly_volume": 2400,
+      "competition": "High",
+      "recommended_format": "Google Docs screen tutorial",
+      "subscriber_hook": "Downloadable checklist + Career Starter Kit playlist"
+    },
+    {
+      "id": "kw-02",
+      "keyword": "resume for college students",
+      "search_intent": "Find a student-friendly resume format and examples",
+      "monthly_volume": 1900,
+      "competition": "High",
+      "recommended_format": "Template walkthrough / resume teardown",
+      "subscriber_hook": "Student resume series and project-bullet examples"
+    },
+    {
+      "id": "kw-03",
+      "keyword": "python roadmap for beginners",
+      "search_intent": "Learn what to study first and in what order",
+      "monthly_volume": 3200,
+      "competition": "High",
+      "recommended_format": "Beginner roadmap with weekly milestones",
+      "subscriber_hook": "Small project path + coding practice plan"
+    },
+    {
+      "id": "kw-04",
+      "keyword": "python projects for beginners",
+      "search_intent": "Build a first small coding project with clear steps",
+      "monthly_volume": 2800,
+      "competition": "Medium",
+      "recommended_format": "Build-along project tutorial",
+      "subscriber_hook": "Project files and next-level playlist"
+    },
+    {
+      "id": "kw-05",
+      "keyword": "excel for beginners full course",
+      "search_intent": "Learn foundational spreadsheet skills in sequence",
+      "monthly_volume": 4100,
+      "competition": "High",
+      "recommended_format": "Modular beginner series with exercises",
+      "subscriber_hook": "Practice sheet and Digital Tools playlist"
+    },
+    {
+      "id": "kw-06",
+      "keyword": "canva vs google slides for students",
+      "search_intent": "Choose a presentation tool for college assignments",
+      "monthly_volume": 1500,
+      "competition": "Low",
+      "recommended_format": "Side-by-side comparison and decision guide",
+      "subscriber_hook": "Presentation checklist + tool tutorials"
+    },
+    {
+      "id": "kw-07",
+      "keyword": "linkedin profile for freshers",
+      "search_intent": "Create a professional profile for internships and first jobs",
+      "monthly_volume": 1700,
+      "competition": "Medium",
+      "recommended_format": "Profile audit / step-by-step setup",
+      "subscriber_hook": "Career Starter Kit and profile checklist"
+    },
+    {
+      "id": "kw-08",
+      "keyword": "digital marketing course for beginners",
+      "search_intent": "Understand core channels and a practical learning path",
+      "monthly_volume": 2600,
+      "competition": "High",
+      "recommended_format": "Beginner roadmap + mini-campaign",
+      "subscriber_hook": "Campaign template and weekly skill lessons"
+    },
+    {
+      "id": "kw-09",
+      "keyword": "ai tools for students",
+      "search_intent": "Discover tools for study, writing, or projects",
+      "monthly_volume": 3900,
+      "competition": "High",
+      "recommended_format": "Responsible-use tool comparison",
+      "subscriber_hook": "Tool update series and workflow examples"
+    },
+    {
+      "id": "kw-10",
+      "keyword": "github tutorial for beginners",
+      "search_intent": "Save and share beginner coding projects",
+      "monthly_volume": 2200,
+      "competition": "Medium",
+      "recommended_format": "Screen tutorial using a small project",
+      "subscriber_hook": "Portfolio build-along series"
+    }
+  ],
+  "competitors": [
+    {
+      "channel": "Apna College",
+      "niche": "Student-focused technology education, coding, placement preparation",
+      "title_formula": "Outcome-led course or roadmap title: skill stack + placement goal",
+      "thumbnail_style": "Qualitative read: bold education packaging, high-contrast text, presenter/course cues; inspect current uploads before a final visual comparison.",
+      "seo_strengths": "Clear student and placement intent, strong skill terms, long-form curriculum and playlists.",
+      "gap": "Own practical digital basics and career artifacts for all students, not only engineering placement tracks."
+    },
+    {
+      "channel": "CodeWithHarry",
+      "niche": "Beginner-to-advanced programming, web development, practical coding exercises",
+      "title_formula": "Topic or language + level + course/tutorial outcome",
+      "thumbnail_style": "Qualitative read: code/tool-led visuals and creator-led teaching; verify the current video grid before final design decisions.",
+      "seo_strengths": "Beginner coding foundations, real-world exercises, structured courses and topic coverage.",
+      "gap": "Connect coding lessons to college assignments, portfolio proof, and internship readiness."
+    },
+    {
+      "channel": "WsCube Tech",
+      "niche": "Vernacular upskilling across coding, digital marketing, AI, and career skills",
+      "title_formula": "Problem or benefit hook + specific tool, number, or skill",
+      "thumbnail_style": "Qualitative read: large topic cue and high-contrast headline; inspect current thumbnails directly.",
+      "seo_strengths": "Career/upskilling positioning, broad skill catalog, topical tool content and playlists.",
+      "gap": "Offer shorter student-first learning paths with visible outputs before any course-oriented CTA."
+    },
+    {
+      "channel": "Physics Wallah",
+      "niche": "Large Indian education ecosystem with exam preparation and multi-subject learning",
+      "title_formula": "Exam, subject, batch, or revision-series title emphasizing a learning outcome",
+      "thumbnail_style": "Qualitative read: educator-led academic lesson packaging and subject/series cues; verify current uploads.",
+      "seo_strengths": "Scale, subject-specific learning paths, exam-aligned playlists and recognizable educator trust.",
+      "gap": "Differentiate with applied career and digital outputs: resumes, portfolios, tools, and beginner coding projects."
+    }
+  ],
+  "video_blueprints": [
+    {
+      "video_id": "v1",
+      "id": "v1",
+      "format": "Search-focused tutorial",
+      "category": "Career skills",
+      "target_keyword": "how to make a resume for students",
+      "primary_keyword": "how to make a resume for students",
+      "title": "How to Make a Resume for Students",
+      "title_variants": [
+        "Resume for Freshers: Build One in Google Docs",
+        "No Experience? Make This Student Resume"
+      ],
+      "thumbnail_text": "BUILD A RESUME",
+      "thumbnail_badge": "FOR STUDENTS",
+      "description_first_25_words": "How to make a resume for students in Google Docs becomes much easier when you build it one section at a time. In this SkillSprint",
+      "description": "How to make a resume for students in Google Docs becomes much easier when you build it one section at a time. In this SkillSprint India tutorial, we create a one-page student resume from a blank document, even if you have no full-time work experience. You will see how to choose a readable layout, write a short profile, describe a college project with action verbs, organize education and skills, and export a polished PDF. We also explain how to keep formatting simple so a recruiter can scan the page quickly. Use this lesson for a resume for freshers, a college internship application, or your first entry-level role; adapt every example to your real experience and never invent achievements. Open Google Docs: https://docs.google.com/document/u/0/ . For additional resume-writing guidance, review Harvard's career-services resource: https://careerservices.fas.harvard.edu/resources/create-a-resume-cv-or-cover-letter/ . Use the five-point checklist in the pinned comment before applying. Keep a version for future edits, and update it after new projects, courses, or internships throughout college. Subscribe to SkillSprint India for practical coding, digital-tool, and career lessons for students. Comment with the section of your resume you want us to explain next. Chapters below match the tutorial sequence. Save it and practise the checklist before applying.",
+      "chapters": [
+        "00:00 The finished resume and today's outcome",
+        "00:30 Set up the page",
+        "01:00 Build the header and profile",
+        "01:55 Turn a college project into evidence",
+        "02:55 Add education and skills",
+        "03:40 Clean formatting and ATS-safe checks",
+        "04:25 Export, checklist, and next step"
+      ],
+      "tags": [
+        "resume for students",
+        "resume for freshers",
+        "student resume",
+        "Google Docs resume",
+        "how to make a resume",
+        "fresher resume India",
+        "college student CV",
+        "ATS friendly resume",
+        "resume format for students",
+        "career skills India",
+        "resume tutorial",
+        "beginner resume guide",
+        "#StudentResume",
+        "#CareerTips",
+        "#SkillSprintIndia"
+      ]
+    },
+    {
+      "video_id": "v2",
+      "id": "v2",
+      "format": "Beginner roadmap",
+      "category": "Coding",
+      "target_keyword": "Python roadmap for beginners",
+      "primary_keyword": "Python roadmap for beginners",
+      "title": "Python Roadmap for Beginners: Start Coding in 2026",
+      "title_variants": [
+        "Learn Python in 30 Days: Beginner Roadmap",
+        "Python for Beginners: What to Learn First"
+      ],
+      "thumbnail_text": "LEARN PYTHON STEPWISE",
+      "thumbnail_badge": "BEGINNER ROADMAP",
+      "description_first_25_words": "This Python roadmap for beginners gives Indian college students a practical order for starting to code without getting lost in random tutorials. We begin with",
+      "description": "This Python roadmap for beginners gives Indian college students a practical order for starting to code without getting lost in random tutorials. We begin with installing Python and running your first program, then move through variables, conditions, loops, functions, lists, dictionaries, and simple file handling. After the foundations, you will build a small project, use GitHub to save your work, and decide what to learn next based on your goal. The lesson explains what to practise each week and what you can safely postpone; it does not promise that a fixed 30-day plan will make anyone job-ready. Start with Python's official beginner information at https://www.python.org/about/gettingstarted/ and use the official tutorial at https://docs.python.org/3/tutorial/ when you want a reference. Keep a small learning log and type every example yourself instead of only watching. By the end, you should have a repeatable study routine and one project idea you can finish. Subscribe to SkillSprint India for beginner coding, useful digital tools, and career preparation explained with student examples. Comment ROADMAP and tell us whether you want the next project in Python, web development, or data analysis. Save this video and follow the chapters in order; pause after each milestone and practise before continuing.",
+      "chapters": [
+        "00:00 The roadmap and realistic outcome",
+        "00:40 Install and run Python",
+        "01:30 Variables and data types",
+        "02:25 Conditions and loops",
+        "03:35 Functions and collections",
+        "04:55 Build a tiny project",
+        "06:05 Save work with Git and GitHub",
+        "07:05 Choose your next learning path",
+        "07:45 Weekly practice plan"
+      ],
+      "tags": [
+        "Python roadmap",
+        "Python for beginners",
+        "learn Python India",
+        "Python tutorial Hindi",
+        "Python course for students",
+        "beginner coding roadmap",
+        "Python projects",
+        "coding for college students",
+        "Python basics",
+        "learn programming",
+        "Python study plan",
+        "GitHub for beginners",
+        "#Python",
+        "#CodingForBeginners",
+        "#SkillSprintIndia"
+      ]
+    },
+    {
+      "video_id": "v3",
+      "id": "v3",
+      "format": "Comparison / tool guide",
+      "category": "Digital tools",
+      "target_keyword": "canva vs google slides for students",
+      "primary_keyword": "canva vs google slides for students",
+      "title": "Canva vs Google Slides: Best for College Projects?",
+      "title_variants": [
+        "Canva or Google Slides? Choose the Right Tool",
+        "Best Presentation Tool for Students? Canva vs Slides"
+      ],
+      "thumbnail_text": "CANVA OR SLIDES",
+      "thumbnail_badge": "FOR STUDENTS",
+      "description_first_25_words": "Canva vs Google Slides for students is not a one-tool-fits-everyone decision. In this practical comparison, SkillSprint India builds the same college presentation task in both",
+      "description": "Canva vs Google Slides for students is not a one-tool-fits-everyone decision. In this practical comparison, SkillSprint India builds the same college presentation task in both tools and compares setup speed, templates, collaboration, classroom use, export options, and how much control a beginner needs. Choose Canva when you want a fast visual starting point and ready-made layouts; choose Google Slides when shared editing, comments, and a familiar Google Workspace flow matter most. Features and free-plan limits can change, so check the current product pages before making a decision. Explore Canva at https://www.canva.com/ and Google Slides at https://slides.google.com/ . The video does not rank either platform as universally superior; it gives you a simple decision checklist based on the assignment, team workflow, internet access, and your design confidence. Pause the video and choose one tool for your next assignment, then apply the three-slide structure shown in the lesson: clear opening, one idea per slide, and a concise conclusion. Subscribe to SkillSprint India for beginner-friendly digital tools, coding, and career skills. Comment with the tool you use most and what you want compared next. Chapters take you through the test, decision, and export workflow. Test sharing permissions before classmates begin editing together today.",
+      "chapters": [
+        "00:00 The assignment and comparison criteria",
+        "00:35 Canva: strengths and trade-offs",
+        "02:05 Google Slides: strengths and trade-offs",
+        "03:35 Build the same three-slide sample",
+        "05:15 Collaboration, access, and export",
+        "06:10 Decision checklist for students",
+        "06:45 Final recommendation by use case"
+      ],
+      "tags": [
+        "Canva vs Google Slides",
+        "Canva tutorial students",
+        "Google Slides tutorial",
+        "presentation tools students",
+        "college presentation",
+        "Canva presentation",
+        "Google Slides for beginners",
+        "student productivity tools",
+        "presentation design tips",
+        "digital skills India",
+        "Canva for college",
+        "Slides tutorial",
+        "#Canva",
+        "#GoogleSlides",
+        "#SkillSprintIndia"
+      ]
+    },
+    {
+      "video_id": "v4",
+      "id": "v4",
+      "format": "Problem-solving / mistakes",
+      "category": "Career skills",
+      "target_keyword": "resume mistakes for students",
+      "primary_keyword": "resume mistakes for students",
+      "title": "7 Resume Mistakes Indian Students Should Avoid",
+      "title_variants": [
+        "Why Your Student Resume Gets Ignored: 7 Fixes",
+        "Fix These 7 Resume Mistakes Before You Apply"
+      ],
+      "thumbnail_text": "FIX RESUME MISTAKES",
+      "thumbnail_badge": "AVOID THESE",
+      "description_first_25_words": "Resume mistakes for students are often simple to fix: unclear project bullets, crowded formatting, generic summaries, and skills listed without proof. In this SkillSprint India",
+      "description": "Resume mistakes for students are often simple to fix: unclear project bullets, crowded formatting, generic summaries, and skills listed without proof. In this SkillSprint India video, we review seven common problems that can make a student resume harder to scan, then show a practical correction for each one. You will learn to replace vague claims with specific evidence, make headings consistent, put relevant information where a recruiter can find it, and remove details that do not support the role. This is an educational review, not a promise that one format guarantees an interview; tailor your resume to each opportunity and be truthful about your experience. For additional guidance, use Harvard's resume and cover-letter resource: https://careerservices.fas.harvard.edu/resources/create-a-resume-cv-or-cover-letter/ . Open your own resume while watching and pause after each fix. Choose the three changes that matter most instead of redesigning everything at once. Subscribe to SkillSprint India for practical career, coding, and digital-tool lessons made for college students. Comment with the mistake you see most often, and share this video with a classmate preparing for an internship. Chapters provide a checklist you can return to before submitting an application. Make small, truthful revisions first; ask a mentor to review. Start with one fix.",
+      "chapters": [
+        "00:00 What makes a resume hard to scan",
+        "00:35 Mistake 1: vague objective",
+        "01:15 Mistake 2: no evidence in project bullets",
+        "02:00 Mistake 3: crowded layout",
+        "02:45 Mistakes 4-5: irrelevant details and skill lists",
+        "03:45 Mistakes 6-7: inconsistent formatting and errors",
+        "04:55 A five-minute correction checklist",
+        "05:35 Recap and next lesson"
+      ],
+      "tags": [
+        "resume mistakes students",
+        "student resume tips",
+        "resume for freshers India",
+        "resume writing mistakes",
+        "college resume",
+        "internship resume tips",
+        "resume bullet points",
+        "ATS friendly resume",
+        "resume checklist",
+        "career advice students",
+        "job application tips",
+        "fresher career skills",
+        "#ResumeTips",
+        "#InternshipPrep",
+        "#SkillSprintIndia"
+      ]
+    }
+  ],
+  "promotion_calendar": [
+    {
+      "day": 1,
+      "platform": "YouTube Long-Form",
+      "content": "Validate the keyword and publish the short-form teaser script",
+      "action": "Check the query in YouTube Studio Research if available; document country, date, and estimate. Finalize the student-resume title, chapters, and three-word thumbnail hook.",
+      "target_kpi": "10 keywords reviewed; one title + thumbnail locked"
+    },
+    {
+      "day": 2,
+      "platform": "Community Tab",
+      "content": "Audience poll: resume, coding, Excel, or presentations?",
+      "action": "Post a four-option poll with a student-friendly image; reply to early votes and note the leading pain point for the next brief.",
+      "target_kpi": "20 votes or 8 substantive comments"
+    },
+    {
+      "day": 3,
+      "platform": "YouTube Shorts",
+      "content": "15-second before/after resume bullet teaser",
+      "action": "Hook with the transformation, show one vague bullet becoming evidence-based, and point to the full lesson release day.",
+      "target_kpi": "Viewed-vs-swiped rate of 70% or higher (pilot target)"
+    },
+    {
+      "day": 4,
+      "platform": "LinkedIn",
+      "content": "Carousel: five sections of a strong student resume",
+      "action": "Share one project-bullet example and a short note for first-year students; add a link to the flagship video once it is live.",
+      "target_kpi": "10 saves or 5 substantive comments"
+    },
+    {
+      "day": 5,
+      "platform": "WhatsApp student communities",
+      "content": "Share a useful checklist, not just a link",
+      "action": "Ask an admin for permission first; post a one-page resume checklist image with a short context note and the video link. Avoid repeat link drops.",
+      "target_kpi": "5 qualified visits; zero complaints"
+    },
+    {
+      "day": 6,
+      "platform": "YouTube Long-Form",
+      "content": "Publish Video 1: student resume in Google Docs",
+      "action": "Upload the optimized title, 200-word description, chapters, and captions; set the custom thumbnail; pin the checklist; add the playlist and end screen.",
+      "target_kpi": "CTR 4-7% by source; first-30s retention at or above 60%"
+    },
+    {
+      "day": 7,
+      "platform": "Community Tab",
+      "content": "Post-publish recap and next-lesson teaser",
+      "action": "Share the finished output image, thank early commenters, summarize the top three fixes, and vote on the next roadmap topic.",
+      "target_kpi": "15 reactions and 5 comments with a next-topic suggestion"
+    }
+  ],
+  "video_script": [
+    {
+      "time": "0:00-0:30",
+      "label": "High-retention hook",
+      "text": "Applying for an internship but have no job experience? You can still make a strong student resume. In the next five minutes, we will build a clean one-page resume in Google Docs, turn a college project into evidence, and check the formatting before you export. By the end, you will know exactly what to write next, and what to leave out. Open a blank document and follow along.",
+      "visual": "Show the completed one-page resume for two seconds, then switch to a blank Google Doc."
+    },
+    {
+      "time": "0:30-1:00",
+      "label": "Module 1: Set up the document",
+      "text": "First, open Google Docs and choose a blank document. Keep the page simple: one column, a readable font, and consistent headings. Avoid tables, icons, and multiple text boxes because they can make a resume harder to scan or edit. Put your name at the top, followed by your phone number, professional email, city, and a LinkedIn or portfolio link if it is ready. You do not need to include private details that are irrelevant to the role.",
+      "visual": "Create a one-column layout and add a professional contact header."
+    },
+    {
+      "time": "1:00-1:55",
+      "label": "Module 2: Write a short profile",
+      "text": "Next, add a two-line profile that connects your current studies with the opportunity. Skip generic claims like hard-working student. Instead, mention your course, one relevant skill, and the kind of work you want to contribute to. For example: second-year computer science student who built a responsive event page using HTML and CSS, seeking a web-development internship to practise front-end skills. Use this only if it accurately describes you. Specific and truthful beats impressive-sounding but empty.",
+      "visual": "Cross out a generic claim and reveal the specific sample profile."
+    },
+    {
+      "time": "1:55-2:55",
+      "label": "Module 3: Turn a project into evidence",
+      "text": "Here is the section that helps when you do not have a job history: projects. Name the project, add the tools you actually used, then write one or two bullets describing what you made and how it works. Use an action verb such as designed, analysed, coded, organized, or tested. Weak bullet: made a website. Stronger: built a three-page event website with HTML and CSS, including a registration form and mobile-friendly layout. Do not invent users, results, or numbers. If you have a measured result, include it; if not, describe the real output.",
+      "visual": "Show before/after bullet; underline action + tool + output."
+    },
+    {
+      "time": "2:55-3:40",
+      "label": "Module 4: Add education and skills",
+      "text": "Add education with your degree, college, expected graduation year, and relevant coursework if it supports the role. Then list a small number of skills you can demonstrate. Group them if that helps: tools, programming languages, or communication skills. A skill list is not proof by itself, so connect important skills to a project or activity elsewhere on the page. Keep the most relevant items near the top and remove skills you cannot explain in an interview.",
+      "visual": "Build Education and Skills headings; show only truthful, role-relevant skills."
+    },
+    {
+      "time": "3:40-4:00",
+      "label": "Module 5: Final scan and export",
+      "text": "Do one final scan: consistent dates, no spelling errors, readable spacing, and links that open. Save an editable copy, then download a PDF with a clear filename such as Ananya-Sharma-Resume.pdf. Your layout is a starting point; tailor the top skills and project bullets to each role.",
+      "visual": "Tick the final checklist and export the PDF."
+    },
+    {
+      "time": "4:00-4:30",
+      "label": "Value-first subscriber CTA",
+      "text": "If this helped you turn a college project into a resume bullet, subscribe to SkillSprint India. We make practical lessons for students: digital tools, beginner coding, and career skills you can use in class or in an internship application. The pinned comment includes a five-point resume checklist and official writing guidance. Before you go, comment with the project you want to include on your resume. We will use real student questions to plan the next tutorial.",
+      "visual": "Show checklist preview and one clear subscribe prompt."
+    },
+    {
+      "time": "4:30-5:00",
+      "label": "End-screen loop to playlist",
+      "text": "Your next step is to improve one project bullet using action, tool, and truthful evidence. Then watch the next career lesson in SkillSprint India's Career Starter Kit playlist. If the playlist is not live yet, save this video and return when the next lesson publishes. If you are starting from a blank page, pause here, open your document, and write your header first. Use the on-screen next video to keep building your student career toolkit, one practical skill at a time.",
+      "visual": "Show the live playlist if available; otherwise feature a related published video and the subscribe element."
+    }
+  ],
+  "troubleshooting": [
+    {
+      "metric": "CTR",
+      "target": "Working target 4-7% by traffic source",
+      "diagnosis": "Title or thumbnail promise is unclear, too dense, or mismatched with the video opening.",
+      "fix": "Test one simpler thumbnail concept and move the viewer outcome earlier in the title; inspect Home/Suggested and Search separately."
+    },
+    {
+      "metric": "Average view duration",
+      "target": "At least 40% of video length",
+      "diagnosis": "Long intro, weak pacing, unexplained steps, or mismatch between packaging and content.",
+      "fix": "Show the output in the first 10 seconds, cut the channel intro, add chapter signposts, and revise the biggest retention dip."
+    },
+    {
+      "metric": "Impressions",
+      "target": "Pilot goal: 15,000 total across four long videos in 30 days",
+      "diagnosis": "Topic may be too narrow, sample too small, or viewer/search match not clear.",
+      "fix": "Validate the query in Studio Research, publish a connected topic cluster, improve the first description sentence, and link related lessons."
+    },
+    {
+      "metric": "Subscribers per view",
+      "target": "Working range 0.5-1.0%",
+      "diagnosis": "Video solves one task but gives little reason to return, or the CTA is generic.",
+      "fix": "State the channel promise after delivering value, pin a useful resource, and recommend a specific next lesson or playlist."
+    }
+  ]
+}

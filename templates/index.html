@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1f3a">
+  <link rel="icon" href="data:,">
+  <meta name="description" content="SkillSprint India YouTube marketing dashboard powered by a local Flask REST API.">
+  <title>SkillSprint India | YouTube Marketing Engine</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to dashboard</a>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="SkillSprint India dashboard home">
+        <span class="brand-mark" aria-hidden="true">SS</span>
+        <span class="brand-copy"><strong>SkillSprint India</strong><small>Creator Growth Lab</small></span>
+      </a>
+      <div class="topbar-right">
+        <span class="offline-pill"><span class="status-dot"></span> Flask API</span>
+        <button class="button button-quiet" id="printButton" type="button">Print dashboard</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">DIGITAL MARKETING PROJECT &middot; SOLO CAMPAIGN</p>
+          <h1 id="page-title">Make great lessons <span>easier to find.</span></h1>
+          <p class="hero-lede">A hands-on YouTube SEO, thumbnail, promotion, and growth workspace for Indian college-student education content.</p>
+          <div class="hero-meta">
+            <span class="status-badge"><span class="status-dot"></span> Demo mode</span>
+            <span>Campaign case study: <strong>SkillSprint India</strong></span>
+          </div>
+        </div>
+        <div class="hero-stat" aria-label="Campaign overview">
+          <div class="hero-stat-top"><span class="stat-label">7-DAY PILOT</span><span class="stat-icon" aria-hidden="true">&#8599;</span></div>
+          <div class="hero-number">05</div>
+          <div class="hero-stat-caption">flagship learning assets<br><b>discover &middot; click &middot; learn &middot; return</b></div>
+          <div class="hero-progress" aria-hidden="true"><span></span></div>
+        </div>
+      </section>
+
+      <nav class="tab-nav" role="tablist" aria-label="Marketing dashboard sections">
+        <button class="tab-button active" id="tab-seo" role="tab" aria-selected="true" aria-controls="panel-seo" tabindex="0" data-tab="seo"><span class="tab-number">01</span><span>SEO Analyzer</span></button>
+        <button class="tab-button" id="tab-thumbnail" role="tab" aria-selected="false" aria-controls="panel-thumbnail" tabindex="-1" data-tab="thumbnail"><span class="tab-number">02</span><span>Thumbnail Lab</span></button>
+        <button class="tab-button" id="tab-research" role="tab" aria-selected="false" aria-controls="panel-research" tabindex="-1" data-tab="research"><span class="tab-number">03</span><span>Research</span></button>
+        <button class="tab-button" id="tab-calendar" role="tab" aria-selected="false" aria-controls="panel-calendar" tabindex="-1" data-tab="calendar"><span class="tab-number">04</span><span>Campaign Plan</span></button>
+        <button class="tab-button" id="tab-analytics" role="tab" aria-selected="false" aria-controls="panel-analytics" tabindex="-1" data-tab="analytics"><span class="tab-number">05</span><span>Growth Simulator</span></button>
+      </nav>
+
+      <!-- TAB 1 : SEO ------------------------------------------------------- -->
+      <section class="tab-panel active" id="panel-seo" role="tabpanel" aria-labelledby="tab-seo" tabindex="0">
+        <div class="section-heading">
+          <div><p class="eyebrow">01 / VISIBILITY</p><h2>Live Video SEO &amp; Metadata Generator</h2><p>Build a useful upload package. The score is a transparent checklist, not a YouTube ranking prediction.</p></div>
+          <span class="section-chip">RULE-BASED &middot; REAL TIME</span>
+        </div>
+        <div class="seo-layout">
+          <form class="card input-card" id="seoForm" autocomplete="off">
+            <div class="card-heading"><div><span class="card-kicker">VIDEO BRIEF</span><h3>Start with the viewer&rsquo;s search</h3></div><span class="icon-tile" aria-hidden="true">&#9906;</span></div>
+            <label for="blueprintSelect">Load a featured blueprint</label>
+            <select id="blueprintSelect"><option value="">Choose a blueprint (optional)</option></select>
+            <label for="primaryKeyword">Primary keyword</label>
+            <input id="primaryKeyword" name="primaryKeyword" type="text" value="how to make a resume for students" maxlength="90" required>
+            <p class="field-hint">Use the phrase your student audience would search.</p>
+            <label for="videoTitle">Video title idea</label>
+            <input id="videoTitle" name="videoTitle" type="text" value="How to Make a Resume for Students" maxlength="120" required>
+            <div class="inline-meta"><span>Recommended: under 60 characters</span><span id="titleLength">0 / 60</span></div>
+            <label for="videoCategory">Content niche</label>
+            <select id="videoCategory" name="videoCategory">
+              <option value="Career skills">Career skills</option>
+              <option value="Coding">Coding</option>
+              <option value="Digital tools">Digital tools</option>
+              <option value="Study skills">Study skills</option>
+            </select>
+            <div class="form-actions">
+              <button class="button button-primary" id="analyzeButton" type="submit">Analyze &amp; generate</button>
+              <button class="button button-quiet" id="resetSeo" type="button">Reset</button>
+            </div>
+            <p class="microcopy">SEO metadata and growth estimates are generated by the local Flask API; no YouTube account is connected.</p>
+          </form>
+
+          <div class="card score-card">
+            <div class="score-top"><div><span class="card-kicker">SEO VISIBILITY CHECK</span><h3>Your optimization score</h3></div><span class="score-label" id="scoreLabel">Starting</span></div>
+            <div class="score-row">
+              <div class="score-ring" id="scoreRing" style="--score:0%" role="img" aria-label="SEO score 0 percent"><span><strong id="seoScore">0</strong><small>/100</small></span></div>
+              <div class="score-copy"><strong id="scoreHeadline">Add your video details</strong><p id="scoreAdvice">We&rsquo;ll check keyword fit, title clarity, and publication readiness.</p></div>
+            </div>
+            <div class="score-checks" id="scoreChecks" aria-live="polite"></div>
+          </div>
+        </div>
+
+        <div class="card metadata-card">
+          <div class="card-heading metadata-header"><div><span class="card-kicker">COPY-READY PACKAGE</span><h3>Generated upload metadata</h3></div><div class="form-actions"><button class="button button-secondary" id="copyMetadata" type="button">Copy metadata</button><button class="button button-quiet" id="exportReport" type="button">Export strategy report (.txt)</button></div></div>
+          <p class="action-status" id="copyStatus" role="status" aria-live="polite"></p>
+          <div class="metadata-grid">
+            <article class="metadata-block metadata-wide"><div class="metadata-label"><span>OPTIMIZED TITLE</span><span class="mini-pill" id="generatedTitleCount">0 chars</span></div><p id="generatedTitle" class="generated-title">Your optimized title will appear here.</p></article>
+            <article class="metadata-block metadata-wide"><div class="metadata-label"><span>200-WORD DESCRIPTION</span><span class="mini-pill" id="descriptionCount">0 words</span></div><p id="generatedDescription" class="description-output">Add your brief to generate a natural, keyword-led description.</p></article>
+            <article class="metadata-block"><div class="metadata-label"><span>TIMESTAMPED CHAPTERS</span></div><ul id="generatedChapters" class="chapter-list"></ul></article>
+            <article class="metadata-block"><div class="metadata-label"><span>RAW FILE NAME</span></div><code id="generatedFilename" class="filename-output">video-file-name.mp4</code><div class="metadata-label tag-label"><span>SEARCH TAGS</span></div><div id="generatedTags" class="tag-list"></div></article>
+          </div>
+          <p class="metadata-note">Keep metadata accurate. Tags support context; they do not replace a useful video, clear title, or readable thumbnail.</p>
+        </div>
+      </section>
+
+      <!-- TAB 2 : THUMBNAIL ------------------------------------------------- -->
+      <section class="tab-panel" id="panel-thumbnail" role="tabpanel" aria-labelledby="tab-thumbnail" tabindex="0" hidden>
+        <div class="section-heading">
+          <div><p class="eyebrow">02 / CLICK APPEAL</p><h2>High-CTR Thumbnail &amp; Feed Preview Lab</h2><p>Design one clear promise, preview it at small size, and pair it with a complementary title.</p></div>
+          <span class="section-chip">16:9 &middot; 1280 &times; 720</span>
+        </div>
+        <div class="thumbnail-layout">
+          <div class="card thumbnail-controls">
+            <div class="card-heading"><div><span class="card-kicker">CREATIVE CONTROLS</span><h3>Build the package</h3></div><span class="icon-tile" aria-hidden="true">&#9638;</span></div>
+            <label for="hookText">Thumbnail hook <span class="label-note">exactly 3 words</span></label>
+            <input id="hookText" type="text" value="SHOW REAL PROOF" maxlength="50">
+            <div class="inline-meta"><span>Three-word rule</span><span id="hookWordCount">3 words &middot; ready</span></div>
+            <label for="subBadge">Sub-badge</label>
+            <input id="subBadge" type="text" value="FOR BEGINNERS" maxlength="28">
+            <label for="thumbnailTitle">Video title for feed card</label>
+            <input id="thumbnailTitle" type="text" value="How to Make a Resume for Students" maxlength="100">
+            <span class="control-label">High-contrast theme</span>
+            <div class="theme-options" role="group" aria-label="Thumbnail color theme">
+              <button class="theme-button selected" type="button" data-theme="sprint" aria-pressed="true"><span class="theme-swatch swatch-sprint"></span>Sprint Navy</button>
+              <button class="theme-button" type="button" data-theme="mint" aria-pressed="false"><span class="theme-swatch swatch-mint"></span>Skill Mint</button>
+              <button class="theme-button" type="button" data-theme="sunrise" aria-pressed="false"><span class="theme-swatch swatch-sunrise"></span>Campus Sunrise</button>
+            </div>
+            <div class="checklist-box">
+              <strong>Mobile-readability checklist</strong>
+              <label class="check-row"><input type="checkbox" class="thumbnail-check" checked> One focal point, no clutter</label>
+              <label class="check-row"><input type="checkbox" class="thumbnail-check" checked> Text readable at 160 &times; 90</label>
+              <label class="check-row"><input type="checkbox" class="thumbnail-check" checked> Title and thumbnail add different information</label>
+              <label class="check-row"><input type="checkbox" class="thumbnail-check"> Claim matches the actual video</label>
+              <span class="check-status" id="checkStatus" aria-live="polite">3 of 4 checks complete</span>
+            </div>
+          </div>
+          <div class="preview-stack">
+            <div class="card preview-card">
+              <div class="preview-heading"><div><span class="card-kicker">LIVE THUMBNAIL CANVAS</span><h3>1280 &times; 720 preview</h3></div><span class="aspect-pill">16:9</span></div>
+              <div class="thumb-canvas theme-sprint" id="thumbCanvas" role="img" aria-label="Live thumbnail preview">
+                <div class="thumb-grid-lines" aria-hidden="true"></div>
+                <div class="thumb-badge" id="thumbBadge">FOR BEGINNERS</div>
+                <div class="thumb-brand">SS</div>
+                <div class="thumb-headline" id="thumbHeadline">SHOW<br>REAL PROOF</div>
+                <div class="thumb-art" aria-hidden="true"><div class="art-window"><div class="art-window-top"><i></i><i></i><i></i><span>PROJECT</span></div><div class="art-lines"><b></b><b></b><b></b><em></em></div><div class="art-stamp">&#10003;</div></div><div class="art-orbit"></div><div class="art-arrow">&#8599;</div></div>
+                <div class="thumb-caption">SKILLSPRINT INDIA</div>
+              </div>
+              <p class="preview-footnote">Canvas maintains a 16:9 aspect ratio. This is a design mockup, not a finished uploaded thumbnail.</p>
+            </div>
+            <div class="card feed-card">
+              <div class="preview-heading"><div><span class="card-kicker">YOUTUBE HOME FEED</span><h3>Title + thumbnail synergy</h3></div></div>
+              <div class="feed-preview">
+                <div class="feed-thumb" id="feedThumb"><span id="feedHook">SHOW REAL PROOF</span><i>SS</i></div>
+                <div class="feed-details"><span class="feed-avatar">SS</span><div><strong id="feedTitle">How to Make a Resume for Students in Google Docs</strong><small>SkillSprint India &middot; New video</small><small>Practical career skills for students</small></div><button class="more-button" type="button" aria-label="More video options">&#8226;&#8226;&#8226;</button></div>
+              </div>
+              <div class="synergy-note"><span class="synergy-icon" aria-hidden="true">&#8599;</span><p><strong>Complementary promise:</strong> the title names the task and tool; the thumbnail delivers the emotional payoff.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 3 : RESEARCH & BLUEPRINTS ------------------------------------ -->
+      <section class="tab-panel" id="panel-research" role="tabpanel" aria-labelledby="tab-research" tabindex="0" hidden>
+        <div class="section-heading">
+          <div><p class="eyebrow">03 / AUDIENCE INTELLIGENCE</p><h2>Keyword Research &amp; Video Blueprints</h2><p>Search the keyword bank and open a ready-to-publish SEO blueprint with one click.</p></div>
+          <span class="section-chip" id="dataSourceBadge">LOADING DATASET</span>
+        </div>
+        <div class="research-stats" id="researchStats"></div>
+
+        <div class="card table-card">
+          <div class="table-toolbar"><div><span class="card-kicker">EDUCATIONAL KEYWORDS</span><h3>High-intent topic bank</h3></div><div class="table-filters"><label class="sr-only" for="keywordSearch">Search keywords</label><input id="keywordSearch" type="search" placeholder="Search keyword or intent&hellip;"><label class="sr-only" for="competitionFilter">Filter competition</label><select id="competitionFilter"><option value="all">All competition</option><option>Low</option><option>Medium</option><option>High</option></select></div></div>
+          <div class="table-scroll"><table><thead><tr><th>Keyword</th><th>Monthly volume (est.)</th><th>Search intent</th><th>Competition</th><th>Video format</th><th>Subscriber hook</th></tr></thead><tbody id="keywordRows"></tbody></table></div>
+          <div class="table-footer"><span id="keywordResultCount">0 keywords</span><span>Monthly volumes are directional estimates; validate with YouTube Studio Research.</span></div>
+        </div>
+
+        <div class="card blueprint-card">
+          <div class="table-toolbar"><div><span class="card-kicker">READY TO PUBLISH</span><h3>Video SEO blueprints</h3></div><span class="mini-pill">Click a card to load it into the SEO Generator</span></div>
+          <div id="blueprintCards" class="blueprint-grid"></div>
+        </div>
+
+        <div class="card table-card competitor-card">
+          <div class="table-toolbar"><div><span class="card-kicker">PUBLIC-FACING AUDIT</span><h3>Competitor benchmarking matrix</h3></div><span class="mini-pill">Qualitative &middot; No private analytics</span></div>
+          <div class="table-scroll"><table><thead><tr><th>Channel / niche</th><th>Title formula</th><th>Thumbnail read</th><th>SEO strength</th><th>Gap SkillSprint can test</th></tr></thead><tbody id="competitorRows"></tbody></table></div>
+        </div>
+      </section>
+
+      <!-- TAB 4 : CALENDAR & SCRIPT ---------------------------------------- -->
+      <section class="tab-panel" id="panel-calendar" role="tabpanel" aria-labelledby="tab-calendar" tabindex="0" hidden>
+        <div class="section-heading">
+          <div><p class="eyebrow">04 / PUBLISH &amp; PROMOTE</p><h2>7-Day Campaign Plan &amp; Video Script</h2><p>A one-week launch sequence across YouTube and student-relevant channels.</p></div>
+          <span class="section-chip">7-DAY API-LOADED PLAN</span>
+        </div>
+        <div class="calendar-summary" id="calendarSummary"></div>
+        <div class="card table-card">
+          <div class="table-toolbar"><div><span class="card-kicker">7-DAY EXECUTION PLAN</span><h3>Daily publishing and promotion calendar</h3></div><label class="select-filter"><span>Platform</span><select id="platformFilter"><option value="all">All channels</option></select></label></div>
+          <div class="table-scroll calendar-scroll"><table><thead><tr><th>Day</th><th>Platform</th><th>Content piece</th><th>Promotion action</th><th>Target KPI</th></tr></thead><tbody id="calendarRows"></tbody></table></div>
+        </div>
+        <div class="card script-card">
+          <div class="script-header"><div><span class="card-kicker">FLAGSHIP VIDEO 01 &middot; 5 MINUTES</span><h3>Word-for-word educational script</h3><p>Topic: Make a student resume in Google Docs &middot; includes a 30-second retention hook and a value-first subscriber CTA.</p></div><button class="button button-secondary" id="copyScript" type="button">Copy script</button></div>
+          <div id="scriptSections" class="script-sections"></div>
+          <div class="script-production"><strong>End-screen layout:</strong> Show the Career Starter Kit playlist when it contains a next lesson; otherwise feature the best related published video, plus the subscribe element.</div>
+        </div>
+      </section>
+
+      <!-- TAB 5 : ANALYTICS ------------------------------------------------- -->
+      <section class="tab-panel" id="panel-analytics" role="tabpanel" aria-labelledby="tab-analytics" tabindex="0" hidden>
+        <div class="section-heading">
+          <div><p class="eyebrow">05 / MEASURE &amp; IMPROVE</p><h2>YouTube Analytics &amp; Subscriber Growth Simulator</h2><p>Adjust the assumptions and see how reach, click appeal, viewing, and subscriber conversion compound.</p></div>
+          <span class="section-chip">SCENARIO MODEL &middot; NOT A FORECAST</span>
+        </div>
+        <div class="simulator-layout">
+          <div class="card slider-card">
+            <div class="card-heading"><div><span class="card-kicker">CHANGE YOUR ASSUMPTIONS</span><h3>Monthly scenario inputs</h3></div><span class="icon-tile" aria-hidden="true">&#8767;</span></div>
+            <div class="slider-field"><div class="slider-label"><label for="impressionsSlider">Monthly impressions</label><output id="impressionsValue" for="impressionsSlider">60,000</output></div><input id="impressionsSlider" type="range" min="5000" max="200000" step="1000" value="60000"><div class="range-ends"><span>5k</span><span>200k</span></div></div>
+            <div class="slider-field"><div class="slider-label"><label for="ctrSlider">Thumbnail CTR</label><output id="ctrValue" for="ctrSlider">5.5%</output></div><input id="ctrSlider" type="range" min="1" max="12" step="0.1" value="5.5"><div class="range-ends"><span>1%</span><span>12%</span></div></div>
+            <div class="slider-field"><div class="slider-label"><label for="avdSlider">Average view duration</label><output id="avdValue" for="avdSlider">3.2 min</output></div><input id="avdSlider" type="range" min="0.5" max="8" step="0.1" value="3.2"><div class="range-ends"><span>0.5 min</span><span>8 min</span></div></div>
+            <div class="slider-field"><div class="slider-label"><label for="conversionSlider">Subscriber rate per view</label><output id="conversionValue" for="conversionSlider">0.8%</output></div><input id="conversionSlider" type="range" min="0.1" max="3" step="0.1" value="0.8"><div class="range-ends"><span>0.1%</span><span>3%</span></div></div>
+            <p class="microcopy">Model: views = impressions &times; CTR; watch hours = views &times; AVD &divide; 60; subscribers = views &times; sub_rate. Real outcomes vary.</p>
+          </div>
+          <div class="results-column">
+            <div class="result-card result-primary"><span class="result-label">PROJECTED MONTHLY VIEWS</span><strong id="projectedViews">3,300</strong><small>impressions &times; click-through rate</small><div class="result-line"></div></div>
+            <div class="result-pair"><div class="result-card"><span class="result-label">WATCH HOURS</span><strong id="projectedHours">176</strong><small>views &times; average duration</small></div><div class="result-card"><span class="result-label">NEW SUBSCRIBERS</span><strong id="projectedSubs">26</strong><small>views &times; subscriber rate</small></div></div>
+            <div class="card diagnosis-card"><div class="card-heading"><div><span class="card-kicker">LIVE DIAGNOSIS</span><h3>Where to optimize next</h3></div></div><div id="liveDiagnosis" class="diagnosis-list" aria-live="polite"></div></div>
+          </div>
+        </div>
+        <div class="card table-card playbook-card">
+          <div class="table-toolbar"><div><span class="card-kicker">ANALYTICS OPTIMIZATION DECISION TABLE</span><h3>Metric &rarr; diagnosis &rarr; fix</h3></div><span class="mini-pill">Planning targets, not universal benchmarks</span></div>
+          <div class="table-scroll"><table><thead><tr><th>Metric</th><th>Working target</th><th>If low, check</th><th>Exact next test</th></tr></thead><tbody id="playbookRows"></tbody></table></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><span>SkillSprint India &middot; Digital Marketing Campaign Engine</span><span id="datasetStatus">Loading local campaign-data.json&hellip;</span><span>Built with HTML &middot; CSS &middot; Vanilla JS &middot; Flask</span></footer>
+  </div>
+</body>
+</html>
